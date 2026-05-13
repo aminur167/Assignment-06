@@ -32,7 +32,6 @@ function App() {
           setSelectedProducts={setSelectedProducts} 
         />
       </Suspense>
-
       <StepsSection />
       <PricingSection />
       
@@ -41,5 +40,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
