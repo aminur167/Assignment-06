@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root {
+  font-family: 'Inter', sans-serif;
+}
+
+.bg-purple-main {
+  background-color: #9538E2;
+}
+
+.text-purple-main {
+  color: #9538E2;
+}
