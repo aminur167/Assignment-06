@@ -34,5 +34,4 @@ const Navbar = ({ cartCount }) => {
     </nav>
   );
 };
-
 export default Navbar;
