@@ -14,9 +14,7 @@ const fetchProducts = async () => {
   const res = await fetch("/data.json");
   return res.json();
 };
-
 const productsPromise = fetchProducts();
-
 function App() {
   const [selectedProducts, setSelectedProducts] = useState([]);
 
