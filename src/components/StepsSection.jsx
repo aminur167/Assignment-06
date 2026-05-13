@@ -49,5 +49,4 @@ const StepsSection = () => {
     </div>
   );
 };
-
 export default StepsSection;

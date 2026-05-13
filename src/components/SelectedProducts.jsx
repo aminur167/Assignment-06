@@ -71,5 +71,4 @@ const SelectedProducts = ({ selectedProducts, setSelectedProducts, setSelectedTy
     </div>
   );
 };
-
 export default SelectedProducts;
