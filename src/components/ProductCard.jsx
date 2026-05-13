@@ -10,8 +10,6 @@ const ProductCard = ({ product, setSelectedProducts, selectedProducts }) => {
       toast.error("Already in Cart!");
       return;
     }
-    
-    // কয়েন লজিক সরিয়ে সরাসরি অ্যাড করা হচ্ছে
     setSelectedProducts([...selectedProducts, product]);
     toast.success(`${product.name} Added to Cart!`);
   };

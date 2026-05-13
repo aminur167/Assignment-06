@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#06091A] text-white pt-24 pb-10">
       <div className="container mx-auto px-4">
-        {/* Banner CTA Section */}
+        
         <div className="text-center mb-20 space-y-6 bg-purple-main p-16 rounded-[40px] shadow-2xl">
           <h2 className="text-4xl md:text-5xl font-black">Ready to Transform Your Workflow?</h2>
           <p className="text-purple-100 text-lg opacity-80">Join thousands of professionals who are already using Digitools to work smarter. Start your free trial today.</p>
@@ -16,7 +16,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Footer Links Grid */}
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16">
           <div className="md:col-span-1">
              <h2 className="text-3xl font-black mb-6">DigiTools</h2>
@@ -63,7 +62,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between text-gray-500 text-xs gap-4">
           <p>© 2026 Digitools. All rights reserved.</p>
           <div className="flex gap-6">
