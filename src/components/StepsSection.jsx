@@ -1,4 +1,7 @@
 import React from 'react';
+import userIcon from '../assets/user.png';
+import packageIcon from '../assets/package.png';
+import rocketIcon from '../assets/rocket.png';
 
 const StepsSection = () => {
   const steps = [
@@ -6,19 +9,19 @@ const StepsSection = () => {
       id: "01",
       title: "Create Account",
       description: "Sign up for free in seconds. No credit card required to get started.",
-      image: "/src/assets/user.png", 
+      image: userIcon, 
     },
     {
       id: "02",
       title: "Choose Products",
       description: "Browse our catalog and select the tools that fit your needs.",
-      image: "/src/assets/package.png",
+      image: packageIcon,
     },
     {
       id: "03",
       title: "Start Creating",
       description: "Download and start using your premium tools immediately.",
-      image: "/src/assets/rocket.png",
+      image: rocketIcon,
     },
   ];
 
@@ -49,4 +52,5 @@ const StepsSection = () => {
     </div>
   );
 };
+
 export default StepsSection;

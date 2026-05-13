@@ -25,12 +25,6 @@ const SelectedProducts = ({ selectedProducts, setSelectedProducts, setSelectedTy
           <CiShoppingCart />
         </div>
         <p className="text-xl text-gray-400 font-bold">Your cart is empty.</p>
-        <button 
-          onClick={() => setSelectedType("available")} 
-          className="btn btn-link text-purple-main font-bold mt-2"
-        >
-          Browse Products
-        </button>
       </div>
     );
   }
@@ -38,37 +32,36 @@ const SelectedProducts = ({ selectedProducts, setSelectedProducts, setSelectedTy
   return (
     <div className="max-w-4xl mx-auto space-y-6">
       <div className="bg-white border rounded-3xl p-8 shadow-sm">
-        <h3 className="text-2xl font-bold mb-6">Your Cart</h3>
+        <h3 className="text-2xl font-bold mb-6 text-left">Your Cart</h3>
         <div className="space-y-4">
           {selectedProducts.map(p => (
-            <div key={p.id} className="flex items-center justify-between p-4 bg-gray-50 rounded-2xl border">
+            <div key={p.id} className="flex items-center justify-between p-4 bg-gray-50 rounded-2xl border border-gray-100">
               <div className="flex items-center gap-4">
                 <span className="text-3xl">{p.icon}</span>
-                <div>
+                <div className="text-left">
                   <h4 className="font-bold text-lg">{p.name}</h4>
-                  <p className="text-purple-main font-bold">${p.price}</p>
+                  <p className="text-gray-400 font-medium">${p.price}</p>
                 </div>
               </div>
-              <button onClick={() => handleRemove(p.id)} className="btn btn-ghost text-red-500 font-bold">Remove</button>
+              <button onClick={() => handleRemove(p.id)} className="text-red-500 font-bold hover:underline pr-4">Remove</button>
             </div>
           ))}
         </div>
         <div className="mt-10 border-t pt-8">
           <div className="flex justify-between items-center mb-8">
-            <span className="text-xl font-bold text-gray-500">Total Price:</span>
+            <span className="text-xl font-medium text-gray-400">Total:</span>
             <span className="text-4xl font-black text-gray-900">${total}</span>
           </div>
-          <div className="flex gap-4">
-            <button onClick={() => setSelectedType("available")} className="btn btn-outline flex-1 rounded-2xl h-14 font-bold border-purple-200">
-              Add More Products
-            </button>
-            <button onClick={handleCheckout} className="btn bg-purple-main text-white flex-[2] rounded-2xl h-14 border-none hover:bg-purple-800 font-bold">
-              Proceed to Checkout
-            </button>
-          </div>
+          <button 
+            onClick={handleCheckout} 
+            className="btn bg-purple-main text-white w-full rounded-full h-14 border-none hover:bg-purple-800 font-bold text-lg"
+          >
+            Proceed To Checkout
+          </button>
         </div>
       </div>
     </div>
   );
 };
+
 export default SelectedProducts;

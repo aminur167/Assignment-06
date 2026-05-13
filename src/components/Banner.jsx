@@ -1,4 +1,6 @@
 import React from 'react';
+import bannarImage from '../assets/banner.png'
+import playIcon from '../assets/Play.png'
 
 const Banner = () => {
   return (
@@ -20,13 +22,13 @@ const Banner = () => {
               Explore Products
             </button>
             <button className="btn btn-outline border-purple-200 text-purple-main hover:bg-purple-50 rounded-full px-10 h-14 font-bold"> 
-              <img src="/src/assets/Play.png" alt="" />
+              <img src={playIcon} alt="" />
               Watch Demo
             </button>
           </div>
         </div>
         <div className="flex-1">
-          <img src="/src/assets/banner.png" alt="Banner" className="w-full drop-shadow-2xl" />
+          <img src={bannarImage} alt="Banner" className="w-full drop-shadow-2xl" />
         </div>
       </div>
 
